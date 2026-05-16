@@ -223,6 +223,28 @@ RUN case "${TARGETARCH}" in \
         install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl && \
         rm -f kubectl kubectl.sha256
 
+# Database clients: postgres + mariadb/mysql (system-wide via apt -> usable by ubuntu and root)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        postgresql-client \
+        mariadb-client && \
+    rm -rf /var/lib/apt/lists/*
+
+# MongoDB Shell (mongosh) - latest release, arch-aware. Extract under /opt/mongosh
+# so bundled lib/mongosh_crypt_v1.so stays next to bin/mongosh, then symlink into /usr/local/bin.
+RUN case "${TARGETARCH}" in \
+            amd64) MONGOSH_ARCH=x64 ;; \
+            arm64) MONGOSH_ARCH=arm64 ;; \
+            *) echo "Unsupported architecture: ${TARGETARCH}" >&2; exit 1 ;; \
+        esac && \
+        MONGOSH_VERSION=$(curl -fsSL https://api.github.com/repos/mongodb-js/mongosh/releases/latest \
+            | grep -oE '"tag_name":\s*"v?[^"]+"' | head -n1 | sed -E 's/.*"v?([^"]+)"/\1/') && \
+        curl -fsSL "https://downloads.mongodb.com/compass/mongosh-${MONGOSH_VERSION}-linux-${MONGOSH_ARCH}.tgz" \
+            -o /tmp/mongosh.tgz && \
+        mkdir -p /opt/mongosh && \
+        tar -xzf /tmp/mongosh.tgz -C /opt/mongosh --strip-components=1 && \
+        ln -sf /opt/mongosh/bin/mongosh /usr/local/bin/mongosh && \
+        rm -f /tmp/mongosh.tgz
+
 RUN mkdir -p /workspace /usr/local/bundle
 
 # Install Rails project dependencies during build when a Rails app is present in the build context

@@ -1,11 +1,21 @@
 name: build-and-publish
 
+# Triggers:
+#   - schedule:    daily at 00:00 UTC, keeps the image fresh against upstream toolchain updates
+#   - workflow_dispatch: manual rebuild from the Actions tab
+#   - push:        when the build inputs change (Dockerfile, scripts, entrypoint, workflow itself)
+#                  Docs (README) and the generated TOOL_VERSIONS.md never trigger a rebuild,
+#                  so the in-job commit of TOOL_VERSIONS.md cannot loop back into another build.
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
   push:
     branches: [main]
+    paths-ignore:
+      - 'TOOL_VERSIONS.md'
+      - 'README.md'
+      - '**/*.md'
 
 concurrency:
   group: build-${{ github.ref }}
@@ -19,12 +29,17 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: write
+      contents: write   # required to commit TOOL_VERSIONS.md back
+      packages: write   # required to push to ghcr.io
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # ref_name resolves to the branch on schedule/workflow_dispatch runs and
+          # to the pushed branch on push runs, so the later `git push` lands on
+          # the correct branch instead of failing on detached HEAD.
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -39,7 +54,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push (multi-arch, no cache)
+      - name: Build and push (multi-arch, no cache, always pull base)
+        id: build
         uses: docker/build-push-action@v6
         with:
           context: .
@@ -50,3 +66,46 @@ jobs:
           pull: true
           provenance: false
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Pull pushed image (amd64) for version sampling
+        run: docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Generate TOOL_VERSIONS.md
+        run: |
+          docker run --rm \
+            -v "$PWD/scripts/collect-tool-versions.sh:/tmp/collect.sh:ro" \
+            --entrypoint /bin/bash \
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
+            -lc 'bash /tmp/collect.sh' > TOOL_VERSIONS.md
+
+      - name: Commit and push TOOL_VERSIONS.md if changed
+        # No-op when versions didn't drift. When they did, commit with rich
+        # metadata in the message; the file itself stays diff-friendly.
+        # Loop prevention:
+        #   1. GitHub does not retrigger workflows from pushes authored via
+        #      GITHUB_TOKEN (built-in guard).
+        #   2. The push trigger excludes Markdown paths, so even a user-facing
+        #      replay wouldn't loop.
+        #   3. The commit message carries [skip ci] as a third safety net.
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- TOOL_VERSIONS.md; then
+            echo "TOOL_VERSIONS.md unchanged - nothing to commit."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          generated_at="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          short_sha="$(git rev-parse --short HEAD)"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+          git add TOOL_VERSIONS.md
+          git commit -m "chore(ci): refresh TOOL_VERSIONS.md [skip ci]" \
+                     -m "Built: ${generated_at}" \
+                     -m "Source commit: ${short_sha}" \
+                     -m "Image digest: ${{ steps.build.outputs.digest }}" \
+                     -m "Run: ${run_url}"
+
+          git push
