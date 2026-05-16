@@ -40,16 +40,17 @@ Installa Docker Engine seguendo la guida ufficiale della tua distribuzione. Assi
 1. Clona o copia questa cartella sul tuo computer.
 2. Dal terminale, posizionati nella cartella del tuo progetto (quella che vuoi montare dentro il container).
 3. Copia `compose.yml` nella cartella del progetto (oppure lavora direttamente dalla cartella che lo contiene).
-4. Avvia:
+4. Modifica le variabili di ambiente e mounts (maggiori dettagli nelle sezioni a seguire)
+5. Avvia:
 
    ```bash
    docker compose up -d
    ```
 
-5. Entra nel container:
+6. Entra nel container:
 
    ```bash
-   docker compose exec ubuntu-env bash
+   docker compose exec --user ubuntu ubuntu-env bash
    ```
 
 Adesso sei dentro un ambiente Linux con tutti i tool già installati. La cartella in cui sei sul tuo computer è disponibile dentro il container in `/workspace`: ogni modifica che fai dentro il container ai file viene riflessa immediatamente sul tuo PC, e viceversa.
@@ -173,7 +174,7 @@ WORKSPACE_UMASK=002
 docker compose up -d
 
 # Entra nel container (apre una shell bash)
-docker compose exec ubuntu-env bash
+docker compose exec --user ubuntu-env bash
 
 # Vedi i log
 docker compose logs -f
