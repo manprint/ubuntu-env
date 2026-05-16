@@ -1,0 +1,26 @@
+name: ubuntu-env
+
+services:
+  ubuntu-env:
+    image: ghcr.io/manprint/ubuntu-env:latest
+    container_name: ubuntu-env
+    hostname: ubuntu-env
+    working_dir: /workspace
+    user: "0:0"
+    init: true
+    tty: true
+    stdin_open: true
+    restart: "no"
+    environment:
+      GRANT_PERMISSION: "${GRANT_PERMISSION:-1000}"
+      WORKSPACE_UMASK: "${WORKSPACE_UMASK:-002}"
+      GIT_USER: "${GIT_USER:-user}"
+      GIT_MAIL: "${GIT_MAIL:-user@dev.it}"
+      PROMPT_TAG: "${PROMPT_TAG:-ubuntu-env}"
+      TERM: "${TERM:-xterm-256color}"
+    volumes:
+      - $PWD:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/user/.claude:/home/ubuntu/.claude
+      - /home/user/.claude.json:/home/ubuntu/.claude.json
+      - /home/user/.git-credentials:/home/ubuntu/.git-credentials
