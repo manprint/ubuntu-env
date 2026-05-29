@@ -16,17 +16,17 @@
 | Tool | Version |
 |---|---|
 | Go | 1.26.3 |
-| Java (OpenJDK) | 17.0.18 |
+| Java (OpenJDK) | 17.0.19 |
 | Node.js | 24.15.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
-| Rust (rustc) | 1.95.0 |
+| Rust (rustc) | 1.96.0 |
 
 ## Build tools & package managers
 
 | Tool | Version |
 |---|---|
-| cargo | 1.95.0 |
+| cargo | 1.96.0 |
 | just | 1.51.0 |
 | npm | 11.12.1 |
 | pip | 25.1.1 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.34.55 |
+| AWS CLI | 2.34.56 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.1 |
 | OpenTofu | 1.12.1 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.153 |
+| Claude Code | 2.1.156 |
 
 ## Database clients
 
