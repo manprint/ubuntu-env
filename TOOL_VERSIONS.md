@@ -31,7 +31,7 @@
 | npm | 11.13.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
-| bundler | 4.0.13 |
+| bundler | 4.0.14 |
 
 ## Web frameworks & process managers
 
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.34.64 |
+| AWS CLI | 2.35.1 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.1 |
 | OpenTofu | 1.12.1 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.169 |
+| Claude Code | 2.1.170 |
 
 ## Database clients
 
