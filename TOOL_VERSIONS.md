@@ -45,16 +45,16 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.35.3 |
+| AWS CLI | 2.35.4 |
 | Docker CLI | 29.1.3 |
-| kubectl | 1.36.1 |
-| OpenTofu | 1.12.1 |
+| kubectl | 1.36.2 |
+| OpenTofu | 1.12.2 |
 
 ## AI tooling
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.174 |
+| Claude Code | 2.1.177 |
 
 ## Database clients
 
