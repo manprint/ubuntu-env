@@ -27,7 +27,7 @@
 | Tool | Version |
 |---|---|
 | cargo | 1.96.0 |
-| just | 1.54.0 |
+| just | 1.55.0 |
 | npm | 11.16.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
@@ -39,13 +39,13 @@
 |---|---|
 | Angular CLI | 22.0.4 |
 | Rails | 8.1.3 |
-| PM2 | 7.0.1 |
+| PM2 | 7.0.3 |
 
 ## Cloud & DevOps
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.35.11 |
+| AWS CLI | 2.35.12 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.2 |
 | OpenTofu | 1.12.3 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.195 |
+| Claude Code | 2.1.196 |
 
 ## Database clients
 
@@ -62,4 +62,4 @@
 |---|---|
 | psql (PostgreSQL) | 18.4 |
 | mariadb / mysql | 11.8.6-MariaDB |
-| mongosh | 2.9.0 |
+| mongosh | 2.9.1 |
