@@ -15,7 +15,7 @@
 
 | Tool | Version |
 |---|---|
-| Go | 1.26.4 |
+| Go | 1.26.5 |
 | Java (OpenJDK) | 17.0.19 |
 | Node.js | 24.18.0 |
 | Python | 3.14.4 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.35.16 |
+| AWS CLI | 2.35.17 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.2 |
 | OpenTofu | 1.12.3 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.202 |
+| Claude Code | 2.1.204 |
 
 ## Database clients
 
