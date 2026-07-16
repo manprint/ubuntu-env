@@ -37,7 +37,7 @@
 
 | Tool | Version |
 |---|---|
-| Angular CLI | 22.0.6 |
+| Angular CLI | 22.0.7 |
 | Rails | 8.1.3 |
 | PM2 | 7.0.3 |
 
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.35.23 |
+| AWS CLI | 2.35.24 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.2 |
 | OpenTofu | 1.12.4 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.210 |
+| Claude Code | 2.1.211 |
 
 ## Database clients
 
