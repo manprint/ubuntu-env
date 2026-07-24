@@ -37,7 +37,7 @@
 
 | Tool | Version |
 |---|---|
-| Angular CLI | 22.0.7 |
+| Angular CLI | 22.0.8 |
 | Rails | 8.1.3 |
 | PM2 | 7.0.3 |
 
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.36.6 |
+| AWS CLI | 2.36.7 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.3 |
 | OpenTofu | 1.12.5 |
