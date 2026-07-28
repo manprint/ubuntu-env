@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.36.8 |
+| AWS CLI | 2.36.9 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.3 |
 | OpenTofu | 1.12.5 |
