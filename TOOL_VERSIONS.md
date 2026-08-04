@@ -27,7 +27,7 @@
 | Tool | Version |
 |---|---|
 | cargo | 1.97.1 |
-| just | 1.57.0 |
+| just | 1.58.0 |
 | npm | 11.16.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.36.14 |
+| AWS CLI | 2.36.15 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.3 |
 | OpenTofu | 1.12.5 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.220 |
+| Claude Code | 2.1.221 |
 
 ## Database clients
 
