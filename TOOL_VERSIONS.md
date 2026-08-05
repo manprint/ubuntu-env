@@ -17,7 +17,7 @@
 |---|---|
 | Go | 1.26.5 |
 | Java (OpenJDK) | 17.0.19 |
-| Node.js | 24.18.1 |
+| Node.js | 24.19.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
 | Rust (rustc) | 1.97.1 |
@@ -28,7 +28,7 @@
 |---|---|
 | cargo | 1.97.1 |
 | just | 1.58.0 |
-| npm | 11.16.0 |
+| npm | 11.17.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
 | bundler | 4.0.17 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.36.15 |
+| AWS CLI | 2.36.16 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.3 |
 | OpenTofu | 1.12.5 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.221 |
+| Claude Code | 2.1.222 |
 
 ## Database clients
 
