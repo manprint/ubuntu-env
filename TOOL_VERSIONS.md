@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.234 |
+| Claude Code | 2.1.235 |
 
 ## Database clients
 
