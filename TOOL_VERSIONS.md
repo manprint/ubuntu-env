@@ -9,14 +9,14 @@
 
 | Component | Version |
 |---|---|
-| Base image | Ubuntu 26.04 LTS |
+| Base image | Ubuntu 26.04.1 LTS |
 
 ## Languages & runtimes
 
 | Tool | Version |
 |---|---|
 | Go | 1.27.0 |
-| Java (OpenJDK) | 17.0.19 |
+| Java (OpenJDK) | 17.0.20 |
 | Node.js | 24.19.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.36.30 |
+| AWS CLI | 2.36.31 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.36.4 |
 | OpenTofu | 1.12.6 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.243 |
+| Claude Code | 2.1.246 |
 
 ## Database clients
 
