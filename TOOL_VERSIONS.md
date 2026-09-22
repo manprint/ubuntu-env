@@ -16,7 +16,7 @@
 | Tool | Version |
 |---|---|
 | Go | 1.27.1 |
-| Java (OpenJDK) | 17.0.20 |
+| Java (OpenJDK) | 17.0.20.1 |
 | Node.js | 24.21.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.36.49 |
+| AWS CLI | 2.36.50 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.0 |
 | OpenTofu | 1.12.6 |
