@@ -20,13 +20,13 @@
 | Node.js | 24.21.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
-| Rust (rustc) | 1.98.1 |
+| Rust (rustc) | 1.99.0 |
 
 ## Build tools & package managers
 
 | Tool | Version |
 |---|---|
-| cargo | 1.98.1 |
+| cargo | 1.99.0 |
 | just | 1.58.0 |
 | npm | 11.19.0 |
 | pip | 25.1.1 |
@@ -37,7 +37,7 @@
 
 | Tool | Version |
 |---|---|
-| Angular CLI | 22.2.0 |
+| Angular CLI | 22.2.1 |
 | Rails | 8.1.4 |
 | PM2 | 7.0.4 |
 
@@ -45,16 +45,16 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.37.7 |
+| AWS CLI | 2.37.8 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.1 |
-| OpenTofu | 1.13.0 |
+| OpenTofu | 1.13.1 |
 
 ## AI tooling
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.286 |
+| Claude Code | 2.1.287 |
 
 ## Database clients
 
