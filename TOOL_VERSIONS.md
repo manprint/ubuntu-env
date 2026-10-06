@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.289 |
+| Claude Code | 2.1.291 |
 
 ## Database clients
 
@@ -62,4 +62,4 @@
 |---|---|
 | psql (PostgreSQL) | 18.6 |
 | mariadb / mysql | 11.8.6-MariaDB |
-| mongosh | 2.12.0 |
+| mongosh | 2.13.0 |
