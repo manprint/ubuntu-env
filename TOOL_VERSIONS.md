@@ -37,7 +37,7 @@
 
 | Tool | Version |
 |---|---|
-| Angular CLI | 22.2.1 |
+| Angular CLI | 22.2.2 |
 | Rails | 8.1.4 |
 | PM2 | 7.0.4 |
 
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.292 |
+| Claude Code | 2.1.293 |
 
 ## Database clients
 
