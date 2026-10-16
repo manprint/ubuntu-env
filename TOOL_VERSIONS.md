@@ -20,14 +20,14 @@
 | Node.js | 24.22.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
-| Rust (rustc) | 1.99.0 |
+| Rust (rustc) | 1.99.1 |
 
 ## Build tools & package managers
 
 | Tool | Version |
 |---|---|
-| cargo | 1.99.0 |
-| just | 1.58.0 |
+| cargo | 1.99.1 |
+| just | 1.59.0 |
 | npm | 11.19.1 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
@@ -37,7 +37,7 @@
 
 | Tool | Version |
 |---|---|
-| Angular CLI | 22.2.2 |
+| Angular CLI | 22.2.3 |
 | Rails | 8.1.4 |
 | PM2 | 7.0.4 |
 
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.300 |
+| Claude Code | 2.1.301 |
 
 ## Database clients
 
