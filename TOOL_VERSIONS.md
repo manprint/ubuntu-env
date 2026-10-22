@@ -17,7 +17,7 @@
 |---|---|
 | Go | 1.27.3 |
 | Java (OpenJDK) | 17.0.20.1 |
-| Node.js | 24.22.0 |
+| Node.js | 24.22.1 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
 | Rust (rustc) | 1.99.1 |
@@ -39,22 +39,22 @@
 |---|---|
 | Angular CLI | 22.2.3 |
 | Rails | 8.1.4 |
-| PM2 | 7.0.4 |
+| PM2 | 7.1.0 |
 
 ## Cloud & DevOps
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.38.3 |
+| AWS CLI | 2.38.4 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.1 |
-| OpenTofu | 1.13.1 |
+| OpenTofu | 1.13.2 |
 
 ## AI tooling
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.305 |
+| Claude Code | 2.1.307 |
 
 ## Database clients
 
