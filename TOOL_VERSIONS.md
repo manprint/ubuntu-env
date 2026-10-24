@@ -39,7 +39,7 @@
 |---|---|
 | Angular CLI | 22.2.4 |
 | Rails | 8.1.4 |
-| PM2 | 7.1.0 |
+| PM2 | 7.1.1 |
 
 ## Cloud & DevOps
 
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.309 |
+| Claude Code | 2.1.310 |
 
 ## Database clients
 
@@ -62,4 +62,4 @@
 |---|---|
 | psql (PostgreSQL) | 18.6 |
 | mariadb / mysql | 11.8.6-MariaDB |
-| mongosh | 2.13.0 |
+| mongosh | 2.14.0 |
