@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.39.1 |
+| AWS CLI | 2.39.2 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.2 |
 | OpenTofu | 1.13.2 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.312 |
+| Claude Code | 2.1.314 |
 
 ## Database clients
 
@@ -62,4 +62,4 @@
 |---|---|
 | psql (PostgreSQL) | 18.6 |
 | mariadb / mysql | 11.8.6-MariaDB |
-| mongosh | 2.14.0 |
+| mongosh | 2.14.1 |
