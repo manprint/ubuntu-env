@@ -17,7 +17,7 @@
 |---|---|
 | Go | 1.27.3 |
 | Java (OpenJDK) | 17.0.20.1 |
-| Node.js | 24.22.2 |
+| Node.js | 26.13.0 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
 | Rust (rustc) | 1.99.1 |
@@ -28,7 +28,7 @@
 |---|---|
 | cargo | 1.99.1 |
 | just | 1.59.0 |
-| npm | 11.19.1 |
+| npm | 11.20.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
 | bundler | 4.0.23 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.314 |
+| Claude Code | 2.1.316 |
 
 ## Database clients
 
