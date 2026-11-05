@@ -31,13 +31,13 @@
 | npm | 11.20.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
-| bundler | 4.0.23 |
+| bundler | 4.0.24 |
 
 ## Web frameworks & process managers
 
 | Tool | Version |
 |---|---|
-| Angular CLI | 22.2.5 |
+| Angular CLI | 22.2.6 |
 | Rails | 8.1.4.1 |
 | PM2 | 7.1.2 |
 
@@ -45,10 +45,10 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.39.3 |
+| AWS CLI | 2.39.4 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.2 |
-| OpenTofu | 1.13.2 |
+| OpenTofu | 1.13.8 |
 
 ## AI tooling
 
