@@ -45,10 +45,10 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.39.4 |
+| AWS CLI | 2.39.5 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.2 |
-| OpenTofu | 1.13.8 |
+| OpenTofu | 1.13.9 |
 
 ## AI tooling
 
