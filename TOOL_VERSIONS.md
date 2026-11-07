@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.39.5 |
+| AWS CLI | 2.39.6 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.2 |
 | OpenTofu | 1.13.9 |
@@ -54,7 +54,7 @@
 
 | Tool | Version |
 |---|---|
-| Claude Code | 2.1.318 |
+| Claude Code | 2.1.319 |
 
 ## Database clients
 
