@@ -17,7 +17,7 @@
 |---|---|
 | Go | 1.27.4 |
 | Java (OpenJDK) | 17.0.21.0.3 |
-| Node.js | 26.13.0 |
+| Node.js | 26.13.1 |
 | Python | 3.14.4 |
 | Ruby | 3.3.8 |
 | Rust (rustc) | 1.99.1 |
@@ -45,7 +45,7 @@
 
 | Tool | Version |
 |---|---|
-| AWS CLI | 2.40.0 |
+| AWS CLI | 2.40.1 |
 | Docker CLI | 29.1.3 |
 | kubectl | 1.37.2 |
 | OpenTofu | 1.13.9 |
@@ -62,4 +62,4 @@
 |---|---|
 | psql (PostgreSQL) | 18.6 |
 | mariadb / mysql | 11.8.6-MariaDB |
-| mongosh | 2.14.1 |
+| mongosh | 2.14.2 |
