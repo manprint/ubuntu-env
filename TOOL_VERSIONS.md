@@ -31,7 +31,7 @@
 | npm | 11.20.0 |
 | pip | 25.1.1 |
 | RubyGems | 3.6.7 |
-| bundler | 4.0.24 |
+| bundler | 4.1.0 |
 
 ## Web frameworks & process managers
 
